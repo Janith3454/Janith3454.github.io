@@ -1,0 +1,61 @@
+@import './dark-mode.css';
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.section {
+  padding-bottom: 0rem !important;
+}
+
+#sec2 {
+  padding-top: 0.5rem !important;
+}
+
+#sec3 {
+  padding-top: 0rem !important;
+}
+
+#sec5 {
+  padding-bottom: 3rem !important;
+}
+
+#titleName {
+  font-size: 5rem !important;
+}
+
+#sec2col1 {
+  border-bottom: 0px solid #e6ecf8;
+  border-right: 0px solid #e6ecf8;
+}
+
+.i {
+  width: 3rem !important;
+}
+
+#sec2col1 {
+  padding: 40px;
+}
+
+#sec3 .button {
+  margin-bottom: 4px;
+}
+
+.footer .social-icons a {
+  padding-right: 1rem;
+}
+
+.footer {
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  #titleName {
+    font-size: 4rem !important;
+  }
+
+  #sec2col1 {
+    border-bottom: 1px solid #e6ecf8;
+    border-right: 0px solid #e6ecf8;
+  }
+}
