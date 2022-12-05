@@ -32,11 +32,10 @@
             sizes="32x32"
             href="images/SFAV.png"
         />
-       <script
-       defer
-       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-       >
+       <script 
+       src="https://kit.fontawesome.com/bfe3852383.js" crossorigin="anonymous">
        </script>
+
 </head>
 <body>
     <!-- sec1 -->
@@ -53,9 +52,9 @@
                 </div>
                 <script src="js/dark-mode-switch.min.js"></script>
                 <br />
-                <h1 class="title" id="titleName">Sadeepa<br />Bandara</h1>
-                <p class="subtitle">
-                    Passionate Software Engineer 
+                <h1 class="title" id="titleName" style="font-family: Ubuntu;">Sadeepa<br />Bandara</h1>
+                <p class="subtitle" style="font-family: Roboto Slab;">
+                    Full-Stack Software Engineer 
                 </p>
                 <a
                 class="button is-dark is-medium is-fullwidth"
@@ -64,7 +63,7 @@
                 >Résumé
                 </a>
                 <br /><br />
-                <p class="title has-text-centered">
+                <p class="title has-text-centered" style="font-family: Ubuntu;">
                     Hello there, I'm Sadeepa. Good to see you here!
                 </p>
             </div>
@@ -76,14 +75,15 @@
             <div class="column is-10 is-offset-1"> 
                         <div class="column is-centered">
                             <div class="column" id="sec2col1">
-                                <h3 class="title">
-                                    ABOUT ME()
+                                <h3 class="title" style="font-family: Roboto Slab;">
+                                    ABOUT ME      
+                                    <i class="fa-sharp fa-solid fa-user"></i>
                                 </h3>
                                 <p>
                                     {
-                                        Computer Science junior with 3 years of experience in programming. 
-                                        Who is a driven individual with the ability to adapt to any situation and proven potential to grow self and others. 
-                                        Skilled in C++, C#, Java, HTML, CSS and JavaScript programming languages and software tools such as Unity, Blender.   
+                                        Full stack web developer experienced in JavaScript, Java, C++, HTML and CSS programming languages; <br>
+                                        React.js, React Native, Node.js and Grails application frameworks; <br>
+                                        Software tools such as Git, IntelliJ and Visual Studio.   
                                     }
                                 </p>
                             </div>
@@ -94,37 +94,74 @@
     <section class ="section" id="sec3">
         <div class="container">
             <div class="column is-10 is-offset-1">    
-                <h1 class="title has-text-centered">
-                    Projects I have done and In Progress
+                <h1 class="title has-text-centered" style="font-family: Roboto Slab;">
+                    MY PROJECTS <i class="fa-sharp fa-solid fa-code"></i>
                 </h1>
                 <div class="title is-ancestor">
                     <div class="title is-4 is-vertical is-parent">
                         <div class ="title is-child box">
-                            <p class="title">Game Q and A Web Application</p>
-                            <p style="font-size:large; font-family: 'Courier New', Courier, monospace;">
-                                Designed and developed a web application similar to Stack Overflow or Reddit specific to games. 
-                                This application allows gamers to ask questions related to games they play and receive an answer from fellow gamers. 
-                                This is a web application build upon the Grails framework.
+                            <p class="title" style="font-family: Roboto Slab;"> Stripe Connect Account Creator <i class="fa-sharp fa-solid fa-wallet"></i></p> 
+                            <p style="font-size:large;">
+                                Designed and implemented a full-stack web application using Express.js for the back-end API and React.js framework for the front-end. 
+                                This application calls the Stripe API and generate Connect accounts which can receive customer payments.
                             </p>
                             <br />
                             <p style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                                <b>Tech Stack:</b>
+                                <b>Tech Stack:
+                                    <i class="fa-brands fa-square-js"></i>
+                                    <i class="fa-brands fa-node"></i>
+                                    <i class="fa-brands fa-react"></i>
+
+                                </b>
                             </p>
                             <p style="font-size: large; font-family: 'Courier New', Courier, monospace;">  
-                                Groovy • Grails • MongoDB • Heroku
+                                JavaScript • Node.js • React.js • Express.js
                             </p>
                             <br />
+                            <a
+                            class="button is-dark"
+                            href="https://github.com/Janith3454/Stripe-Connect-Account-Generator"
+                            target="_blank"
+                            >GitHub Repo
+                            </a>
                         </div>
                         <div class ="title is-child box">
-                            <p class="title">E-Commerce App</p>
-                            <p style="font-size:large; font-family: 'Courier New', Courier, monospace;">
+                            <p class="title" style="font-family: Roboto Slab;"> Warehouse System <i class="fa-solid fa-warehouse"></i></p> 
+                            <p style="font-size:large;">
+                                Designed and developed a warehouse system from scratch using the object-oriented programming paradigm. 
+                                This warehouse system allows users to conduct basic warehouse operations. 
+                                The GUI of warehouse system has been implemented using the Model-View-Controller software architectural pattern.
+                            </p>
+                            <br />
+                            <p style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                                <b>Tech Stack:
+                                    <i class="fa-brands fa-java"></i>    
+                                </b>
+                            </p>
+                            <p style="font-size: large; font-family: 'Courier New', Courier, monospace;">  
+                                Java • Object-Oriented-Programming • MVC
+                            </p>
+                            <br />
+                            <a
+                            class="button is-dark"
+                            href="https://github.com/Janith3454/Warehouse-System"
+                            target="_blank"
+                            >GitHub Repo
+                            </a>
+                        </div>         
+                        <div class ="title is-child box">
+                            <p class="title" style="font-family: Roboto Slab;">E-Commerce App <i class="fa-solid fa-tablet-screen-button"></i></p>
+                            <p style="font-size:large;">
                                 Implemented a mobile application using the React Native framework, which allows users to buy and sell used items. 
                                 This mobile app allows users to register an account, 
                                 create item listings and contact other users with item listings if interested in purchasing them.
                             </p>
                             <br />
                             <p style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                                <b>Tech Stack:</b>
+                                <b>Tech Stack:
+                                    <i class="fa-brands fa-react"></i>
+                                    <i class="fa-brands fa-square-js"></i>
+                                </b>
                             </p>
                             <p style="font-size: large; font-family: 'Courier New', Courier, monospace;">  
                                 React Native • JavaScript • Mobile Development
@@ -132,15 +169,17 @@
                             <br />
                         </div>
                         <div class="title is-child box">
-                            <p class="title">Sad Robot</p>
-                            <p style="font-size:large; font-family: 'Courier New', Courier, monospace;">
+                            <p class="title" style="font-family: Roboto Slab;">Sad Robot <i class="fa-solid fa-robot"></i></p>
+                            <p style="font-size:large;">
                                 Brainstormed and designed a simple role-playing game about a 
                                 robot who is lost in a planet with the goal to collect coins and reach the spaceship. 
                                 Designed the character and background assets of the game using Blender and implemented the game using the Unity game engine.  
                             </p>
                             <br />
                             <p style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                                <b>Tech Stack:</b>
+                                <b>Tech Stack:
+                                    <i class="fa-brands fa-unity"></i>
+                                </b>
                             </p>
                             <p style="font-size: large; font-family: 'Courier New', Courier, monospace;">    
                                 C# • Unity • Blender 
@@ -192,7 +231,8 @@
             </p>
             <p>
                 <strong>
-                    Crafted By ME @ 2021
+                    Crafted By ME @ 2021 <br>
+                    Last Updated @ 12/2022
                 </strong>
                 </p>
                 <a
