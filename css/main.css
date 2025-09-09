@@ -174,3 +174,95 @@ body {
     font-size: 1.2rem;
   }
 }
+
+/* About Me Section */
+.about-me {
+  padding: 4rem 2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-text {
+  text-align: left;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.about-text .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.about-text strong {
+  color: #2b6cb0; /* Modern blue highlight */
+}
+
+.about-graphic {
+  display: flex;
+  justify-content: center;
+  animation: slideInRight 1s ease forwards;
+}
+
+.about-graphic img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.about-graphic img:hover {
+  transform: scale(1);
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-graphic {
+    margin-top: 2rem;
+  }
+}
