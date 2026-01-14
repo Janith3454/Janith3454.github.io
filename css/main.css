@@ -177,13 +177,13 @@ body {
 
 /* About Me Section */
 .about-me {
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: start; /* <-- change from center to start */
   gap: 3rem;
 }
 
