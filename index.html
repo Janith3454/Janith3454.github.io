@@ -1,248 +1,195 @@
-<!DOCTYPE html>  <!--specify which version of html the document is using -->
+<!DOCTYPE html>
 <html>
-    <head>
-        <script>
-            async
-        </script>
-        <!--Google Fonts-->
-        <link 
-            href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
-            rel="stylesheet"
-        />
-            <meta charset="utf-8" />
-            <meta name="viewport" content ="width=device-width, initial-scale=1" />
-        <title>Sadeepa Bandara</title>
-        <link
-            rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma-switch@2.0.0/dist/css/bulma-switch.min.css"
-        />
-        <!-- Main CSS file -->
-        <link 
-            rel="stylesheet"
-            href="css/main.css"
-        />
-        <!-- Favicon -->
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="images/SFAV.png"
-        />
-       <script 
-       src="https://kit.fontawesome.com/bfe3852383.js" crossorigin="anonymous">
-       </script>
+  <head>
+    <script>
+      async;
+    </script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sadeepa Bandara</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-switch@2.0.0/dist/css/bulma-switch.min.css"
+    />
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/SFAV.png" />
+    <script
+      src="https://kit.fontawesome.com/bfe3852383.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero" id="sec1">
+      <div class="container has-text-centered fade-in">
+        <h1 class="hero-title">Hi, I'm <span>Sadeepa Bandara</span></h1>
+        <p class="hero-subtitle">Full-Stack Software Engineer</p>
+        <a
+          class="button resume-btn"
+          href="./files/SadeepaBandaraResume.pdf"
+          target="_blank"
+          >Résumé</a
+        >
+      </div>
+    </section>
 
-</head>
-<body>
-    <!-- sec1 -->
-    <section class="section" id="sec1">
-        <div class="container">
-            <div class="column is-10 is-offset-1">
-                <div class="field has-text-centered">
-                    <input
-                        type="checkbox"
-                        class="switch is-large is-dark is-thin"
-                        id="darkSwitch"
-                    />
-                    <label for="darkSwitch"><i class="fas fa-adjust"></i></label>
-                </div>
-                <script src="js/dark-mode-switch.min.js"></script>
-                <br />
-                <h1 class="title" id="titleName" style="font-family: Ubuntu;">Sadeepa<br />Bandara</h1>
-                <p class="subtitle" style="font-family: Roboto Slab;">
-                    Full-Stack Software Engineer 
-                </p>
-                <a
-                class="button is-dark is-medium is-fullwidth"
-                href="./files/Sadeepa Bandara-Resume.pdf"
-                target="_blank"
-                >Résumé
-                </a>
-                <br /><br />
-                <p class="title has-text-centered" style="font-family: Ubuntu;">
-                    Hello there, I'm Sadeepa. Good to see you here!
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- sec2 -->
-    <section class="section has-text-centered" id="sec2">
-        <div class="container">
-            <div class="column is-10 is-offset-1"> 
-                        <div class="column is-centered">
-                            <div class="column" id="sec2col1">
-                                <h3 class="title" style="font-family: Roboto Slab;">
-                                    ABOUT ME      
-                                    <i class="fa-sharp fa-solid fa-user"></i>
-                                </h3>
-                                <p>
-                                    {
-                                        Full stack web developer experienced in JavaScript, Java, C++, HTML and CSS programming languages; <br>
-                                        React.js, React Native, Node.js and Grails application frameworks; <br>
-                                        Software tools such as Git, IntelliJ and Visual Studio.   
-                                    }
-                                </p>
-                            </div>
-                        </div>
-        </div>         
-    </section>
-    <!-- sec3-->
-    <section class ="section" id="sec3">
-        <div class="container">
-            <div class="column is-10 is-offset-1">    
-                <h1 class="title has-text-centered" style="font-family: Roboto Slab;">
-                    MY PROJECTS <i class="fa-sharp fa-solid fa-code"></i>
-                </h1>
-                <div class="title is-ancestor">
-                    <div class="title is-4 is-vertical is-parent">
-                        <div class ="title is-child box">
-                            <p class="title" style="font-family: Roboto Slab;"> Stripe Connect Account Creator <i class="fa-sharp fa-solid fa-wallet"></i></p> 
-                            <p style="font-size:large;">
-                                Designed and implemented a full-stack web application using Express.js for the back-end API and React.js framework for the front-end. 
-                                This application calls the Stripe API and generate Connect accounts which can receive customer payments.
-                            </p>
-                            <br />
-                            <p style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                                <b>Tech Stack:
-                                    <i class="fa-brands fa-square-js"></i>
-                                    <i class="fa-brands fa-node"></i>
-                                    <i class="fa-brands fa-react"></i>
-
-                                </b>
-                            </p>
-                            <p style="font-size: large; font-family: 'Courier New', Courier, monospace;">  
-                                JavaScript • Node.js • React.js • Express.js
-                            </p>
-                            <br />
-                            <a
-                            class="button is-dark"
-                            href="https://github.com/Janith3454/Stripe-Connect-Account-Generator"
-                            target="_blank"
-                            >GitHub Repo
-                            </a>
-                        </div>
-                        <div class ="title is-child box">
-                            <p class="title" style="font-family: Roboto Slab;"> Warehouse System <i class="fa-solid fa-warehouse"></i></p> 
-                            <p style="font-size:large;">
-                                Designed and developed a warehouse system from scratch using the object-oriented programming paradigm. 
-                                This warehouse system allows users to conduct basic warehouse operations. 
-                                The GUI of warehouse system has been implemented using the Model-View-Controller software architectural pattern.
-                            </p>
-                            <br />
-                            <p style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                                <b>Tech Stack:
-                                    <i class="fa-brands fa-java"></i>    
-                                </b>
-                            </p>
-                            <p style="font-size: large; font-family: 'Courier New', Courier, monospace;">  
-                                Java • Object-Oriented-Programming • MVC
-                            </p>
-                            <br />
-                            <a
-                            class="button is-dark"
-                            href="https://github.com/Janith3454/Warehouse-System"
-                            target="_blank"
-                            >GitHub Repo
-                            </a>
-                        </div>         
-                        <div class ="title is-child box">
-                            <p class="title" style="font-family: Roboto Slab;">E-Commerce App <i class="fa-solid fa-tablet-screen-button"></i></p>
-                            <p style="font-size:large;">
-                                Implemented a mobile application using the React Native framework, which allows users to buy and sell used items. 
-                                This mobile app allows users to register an account, 
-                                create item listings and contact other users with item listings if interested in purchasing them.
-                            </p>
-                            <br />
-                            <p style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                                <b>Tech Stack:
-                                    <i class="fa-brands fa-react"></i>
-                                    <i class="fa-brands fa-square-js"></i>
-                                </b>
-                            </p>
-                            <p style="font-size: large; font-family: 'Courier New', Courier, monospace;">  
-                                React Native • JavaScript • Mobile Development
-                            </p>
-                            <br />
-                        </div>
-                        <div class="title is-child box">
-                            <p class="title" style="font-family: Roboto Slab;">Sad Robot <i class="fa-solid fa-robot"></i></p>
-                            <p style="font-size:large;">
-                                Brainstormed and designed a simple role-playing game about a 
-                                robot who is lost in a planet with the goal to collect coins and reach the spaceship. 
-                                Designed the character and background assets of the game using Blender and implemented the game using the Unity game engine.  
-                            </p>
-                            <br />
-                            <p style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                                <b>Tech Stack:
-                                    <i class="fa-brands fa-unity"></i>
-                                </b>
-                            </p>
-                            <p style="font-size: large; font-family: 'Courier New', Courier, monospace;">    
-                                C# • Unity • Blender 
-                            </p>
-                            <br />
-                            <a
-                            class="button is-dark"
-                            href="https://github.com/Janith3454/Sad-Robot"
-                            target="_blank"
-                            >GitHub Repo
-                            </a>
-                        </div>                           
-                    </div>
-                </div>              
-            </div>
-        </div>        
-    </section>
-    <!-- sec5 -->
-    <!-- footer -->
-    <footer class = "footer">
-        <div class="content has-text-centered">
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sadeepabandara" target="_blank">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://github.com/Janith3454" target="_blank">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="https://www.instagram.com/sadeepa._" target="_blank">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://www.facebook.com/sadeepa.bandara.75" target="_blank">
-                    <i class="fab fa-facebook fa-2x"></i>
-                </a>
-            </div>
+    <!-- About Me -->
+    <section class="section fade-in" id="sec2">
+      <div class="container about-me">
+        <div class="about-grid">
+          <!-- Text Side -->
+          <div class="about-text">
+            <h3 class="title">
+              About Me <i class="fa-sharp fa-solid fa-user"></i>
+            </h3>
             <p>
-                Contact Me @
-                <strong>
-                    <a href="mailto:sadeepaj12@gmail.com" target="_blank">
-                     sadeepaj12@gmail.com
-                    </a>
-                </strong>
-                or
-                <strong>
-                    <a href="tel:1-651-387-9532">
-                        (651) 387 9532
-                    </a>
-                </strong>
+              I’m a
+              <strong>Senior Full-Stack Software Engineer</strong> passionate
+              about building end-to-end solutions that make a real-world impact.
+              Over the past 5+ years, I’ve designed and delivered
+              <strong>scalable web and mobile platforms</strong>, from
+              <strong>React-based dashboards</strong> and
+              <strong>Android applications</strong> to
+              <strong>robust APIs</strong> and
+              <strong>real-time data pipelines</strong> in healthcare, IoT, and
+              research domains. I focus on building software that is not only
+              functional, but also reliable, maintainable, and user-friendly.
             </p>
             <p>
-                <strong>
-                    Crafted By ME @ 2021 <br>
-                    Last Updated @ 12/2022
-                </strong>
-                </p>
-                <a
-                href="https://github.com/Janith3454/Janith3454.github.io"
-                target="_blank"
-                >
-                <strong>Github Repo</strong>
-                </a>
+              I’ve collaborated with <strong>cross-functional teams</strong>,
+              integrated complex systems like <strong>AthenaOne EMR</strong>,
+              and translated business and clinical requirements into actionable
+              technical solutions. My work spans from designing backend
+              architectures and GraphQL services to developing responsive,
+              interactive frontends that help clinicians and researchers make
+              better decisions in real time.
             </p>
+            <p>
+              I thrive at the intersection of
+              <strong>technology, design, and strategy</strong>, turning
+              ambitious ideas into elegant, user-centric software. Whether it’s
+              building a high-performance API, a mobile app for real-time
+              patient monitoring, or a web platform that streamlines healthcare
+              workflows, I aim to create impactful software that improves lives
+              and drives meaningful outcomes.
+            </p>
+          </div>
+
+          <!-- Graphic Side -->
+          <div class="about-graphic">
+            <lottie-player
+              src="https://lottie.host/729bef16-9cac-41a1-959d-fe4151b97c16/BLR5sG7dZi.json"
+              background="transparent"
+              speed="1"
+              style="
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+                min-height: 200px;
+              "
+              loop
+              autoplay
+            >
+            </lottie-player>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section class="section fade-in" id="projects">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fa-solid fa-code"></i> My Projects
+        </h2>
+        <div class="project-grid">
+          <div class="project-card fade-in delay-1">
+            <h3>
+              Stripe Connect Account Creator <i class="fa-solid fa-wallet"></i>
+            </h3>
+            <p>
+              Full-stack web app using Express.js + React.js calling Stripe API
+              to generate accounts.
+            </p>
+            <p class="tech">JavaScript • Node.js • React.js • Express.js</p>
+            <a href="https://github.com/..." target="_blank" class="button">
+              GitHub Repo
+            </a>
+          </div>
+
+          <div class="project-card fade-in delay-2">
+            <h3>Warehouse System <i class="fa-solid fa-warehouse"></i></h3>
+            <p>
+              Object-oriented warehouse management system with MVC GUI
+              architecture.
+            </p>
+            <p class="tech">Java • OOP • MVC</p>
+            <a href="https://github.com/..." target="_blank" class="button">
+              GitHub Repo
+            </a>
+          </div>
+
+          <div class="project-card fade-in delay-3">
+            <h3>E-Commerce App <i class="fa-solid fa-mobile"></i></h3>
+            <p>
+              React Native app for buying/selling used items with account
+              registration & listings.
+            </p>
+            <p class="tech">React Native • JavaScript</p>
+          </div>
+
+          <div class="project-card fade-in delay-4">
+            <h3>Sad Robot <i class="fa-solid fa-robot"></i></h3>
+            <p>
+              Role-playing Unity game featuring a lost robot collecting coins to
+              reach a spaceship.
+            </p>
+            <p class="tech">C# • Unity • Blender</p>
+            <a href="https://github.com/..." target="_blank" class="button">
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in">
+      <div class="container has-text-centered">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sadeepabandara" target="_blank">
+            <i class="fab fa-linkedin fa-1x"></i>
+          </a>
+          <a href="https://github.com/Janith3454" target="_blank">
+            <i class="fab fa-github fa-1x"></i>
+          </a>
+          <a href="https://www.instagram.com/sadeepa._" target="_blank">
+            <i class="fab fa-instagram fa-1x"></i>
+          </a>
+          <a href="https://www.facebook.com/sadeepa.bandara.75" target="_blank">
+            <i class="fab fa-facebook fa-1x"></i>
+          </a>
+        </div>
+        <p>
+          Contact me:
+          <a href="mailto:sadeepaj12@gmail.com">sadeepaj12@gmail.com</a>
+        </p>
+        <p><small>Crafted by Me © 2025</small></p>
+      </div>
     </footer>
-</body>
+
+    <!-- Scripts -->
+    <script src="js/scroll-animations.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
 </html>
