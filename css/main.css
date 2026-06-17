@@ -223,6 +223,7 @@ h1, h2, h3 {
 /* ---------- Hero ---------- */
 .hero {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -718,6 +719,7 @@ h1, h2, h3 {
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; gap: 2.25rem; }
+  .hero { padding: 6rem 1.25rem 4rem; }
   .nav-links {
     position: fixed;
     inset: 72px 0 auto 0;
@@ -738,10 +740,30 @@ h1, h2, h3 {
   .nav-toggle { display: flex; }
 }
 @media (max-width: 540px) {
+  .container { width: min(100% - 2.25rem, var(--maxw)); }
   .section { padding: 4.5rem 0; }
+  .hero { padding: 5.5rem 1.25rem 3.5rem; }
+  .hero-eyebrow { font-size: 0.74rem; padding: 0.4rem 0.85rem; }
+  .hero-meta { gap: 0.45rem 1.2rem; font-size: 0.85rem; }
+  .hero-actions { gap: 0.75rem; }
+  .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
   .about-stats { grid-template-columns: 1fr 1fr; }
+  .about-stats .stat-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .stat-num { font-size: 2rem; }
+  .skill-card { padding: 1.35rem; }
+  .timeline { padding-left: 1.6rem; }
+  .timeline-dot { left: -1.6rem; }
+  .timeline-content { padding: 1.35rem 1.25rem; }
+  .timeline-top { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+  .project-card { padding: 1.5rem; }
   .logo-text { display: none; }
-  .timeline-top { flex-direction: column; align-items: flex-start; }
   .edu-card { flex-direction: column; text-align: center; }
   .contact-card { padding: 3rem 1.25rem; }
+  .footer-inner { flex-direction: column; text-align: center; gap: 0.75rem; }
+}
+/* The scroll-hint sits absolutely at the hero's bottom edge; on short or
+   small screens the hero content fills the viewport and the hint overlaps
+   the social links / falls below the fold, so hide it there. */
+@media (max-width: 600px), (max-height: 740px) {
+  .scroll-hint { display: none; }
 }
