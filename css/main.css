@@ -577,6 +577,11 @@ h1, h2, h3 {
 .project-card h3 { font-size: 1.3rem; margin-bottom: 0.35rem; }
 .project-sub { color: var(--accent-2); font-size: 0.88rem; margin: 0 0 0.75rem; font-family: "JetBrains Mono", monospace; }
 .project-card p { color: var(--text-soft); font-size: 0.95rem; margin: 0 0 1rem; }
+.project-bullets { margin: 0 0 1.1rem; padding-left: 1.1rem; }
+.project-bullets li { color: var(--text-soft); font-size: 0.95rem; margin-bottom: 0.6rem; }
+.project-bullets li:last-child { margin-bottom: 0; }
+.project-bullets li::marker { color: var(--accent-2); }
+.project-bullets strong { color: var(--text); font-weight: 600; }
 .project-card .tags { margin-top: auto; }
 .project-link {
   display: inline-flex;
