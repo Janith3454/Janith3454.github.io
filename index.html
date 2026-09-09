@@ -3,18 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sadeepa Bandara — Senior Full-Stack Engineer</title>
+    <title>Sadeepa Bandara — Full-Stack Engineer</title>
     <meta
       name="description"
-      content="Sadeepa Bandara — Senior Full-Stack Engineer specializing in React + TypeScript, GraphQL, and AWS / Kubernetes. Building real-time, business-critical platforms across healthcare and IoT."
+      content="Sadeepa Bandara — Full-Stack Engineer specializing in React + TypeScript, GraphQL, and AWS / Kubernetes. Building real-time, business-critical platforms across healthcare and IoT."
     />
-    <meta name="theme-color" content="#0b0d17" />
+    <meta name="theme-color" content="#070a14" />
+    <script>
+      // Apply the saved (or system-preferred) theme before first paint.
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
 
     <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Sadeepa Bandara — Senior Full-Stack Engineer"
-    />
+    <meta property="og:title" content="Sadeepa Bandara — Full-Stack Engineer" />
     <meta
       property="og:description"
       content="React + TypeScript · GraphQL · AWS / Kubernetes. Real-time platforms across healthcare and IoT."
@@ -63,14 +74,23 @@
           <a href="#contact" class="nav-link nav-cta">Contact</a>
         </nav>
 
-        <button
-          class="nav-toggle"
-          id="navToggle"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-        >
-          <span></span><span></span><span></span>
-        </button>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Switch to light theme"
+          >
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
       <div class="scroll-progress" id="scrollProgress"></div>
     </header>
@@ -88,9 +108,9 @@
           <span class="typed" id="typed"></span><span class="cursor">|</span>
         </p>
         <p class="hero-tagline reveal">
-          Senior full-stack engineer with 4+ years building real-time,
-          business-critical platforms across <strong>healthcare</strong> and
-          <strong>IoT</strong> — from React&nbsp;+&nbsp;TypeScript front ends to
+          Full-stack engineer with 4 years building real-time, business-critical
+          platforms across <strong>healthcare</strong> and
+          <strong>IoT</strong> from React&nbsp;+&nbsp;TypeScript front ends to
           containerized services on AWS&nbsp;/&nbsp;Kubernetes.
         </p>
 
@@ -155,10 +175,10 @@
           <div class="about-grid">
             <div class="about-text reveal">
               <p>
-                I'm a <strong>Senior Full-Stack Engineer</strong> who builds
-                end-to-end software that makes a real-world impact. Over the
-                past <strong>4+ years</strong> I've designed and shipped
-                scalable web and mobile platforms — from
+                I'm a <strong>Full-Stack Engineer</strong> who builds end-to-end
+                software that makes a real-world impact. Over the past
+                <strong>4 years</strong> I've designed and shipped scalable web
+                and mobile platforms from
                 <strong>React-based real-time dashboards</strong> and
                 <strong>Android applications</strong> to robust
                 <strong>GraphQL APIs</strong> and
@@ -171,7 +191,7 @@
                 services on <strong>AWS</strong>, with mobile experience across
                 Android (Kotlin) and React Native. I was
                 <strong>promoted to Lead in under two years</strong>, and I
-                automate builds and deployments through CI/CD — always with a
+                automate builds and deployments through CI/CD always with a
                 focus on product impact, not just code.
               </p>
 
@@ -197,7 +217,7 @@
 
             <div class="about-stats reveal">
               <div class="stat-card">
-                <span class="stat-num" data-target="4" data-suffix="+">0</span>
+                <span class="stat-num" data-target="4">0</span>
                 <span class="stat-label">Years of experience</span>
               </div>
               <div class="stat-card">
@@ -317,7 +337,7 @@
               <div class="timeline-content">
                 <div class="timeline-top">
                   <h3>
-                    Senior Software Engineer
+                    Software Engineer
                     <span class="badge">Lead Engineer</span>
                   </h3>
                   <span class="timeline-date">Feb 2023 – Present</span>
@@ -328,44 +348,56 @@
                 </p>
                 <ul>
                   <li>
-                    Built a clinician-facing
-                    <strong>real-time patient-data visualization</strong> web
-                    platform in React + TypeScript, rendering live data streamed
-                    concurrently from <strong>30–40 Android devices</strong> so
-                    clinicians can monitor patient status as it happens.
+                    Built and operate a
+                    <strong
+                      >real-time, clinician-facing data visualization
+                      platform</strong
+                    >
+                    in React and TypeScript rendering live data streams from
+                    <strong>30–40 concurrent medical devices</strong>, with
+                    responsive interfaces clinicians rely on daily to act on
+                    patient data.
                   </li>
                   <li>
-                    Created a patient event registration system integrated with
-                    the <strong>AthenaOne EMR</strong>, automating
-                    patient-profile creation and appointment booking to reduce
-                    manual clinical-ops work.
+                    Own features <strong>end to end</strong> (design,
+                    implementation, automated testing, deployment, iteration)
+                    across a React frontend and a
+                    <strong>Node.js + Apollo GraphQL</strong> backend.
                   </li>
                   <li>
-                    Enhanced the Node.js + Apollo
-                    <strong>GraphQL backend</strong> that ingests real-time data
-                    from the device fleet and uploads documents to AthenaOne
-                    through an event-driven <strong>RabbitMQ</strong> pipeline.
+                    Designed a patient event registration system integrated with
+                    the <strong>AthenaOne</strong> electronic medical record
+                    (EMR), automating profile creation and appointment booking
+                    via an event-driven <strong>RabbitMQ</strong>
+                    pipeline.
                   </li>
                   <li>
-                    Set up a <strong>GitHub Actions CI/CD</strong> pipeline that
-                    builds and deploys containerized services to staging,
-                    shortening release cycles.
+                    Build and operate systems handling protected health
+                    information (PHI) under <strong>HIPAA compliance</strong>
+                    across the app, EMR integration, and AWS infrastructure.
                   </li>
                   <li>
-                    Cut <strong>AWS spend by 10–15%</strong> via Cost
-                    Optimization Hub audits — migrating EBS gp2→gp3, removing
-                    orphaned volumes, and moving workloads to Graviton
-                    instances.
+                    Built a web replica of the company's Android interactive
+                    video sequence player (React, TypeScript, Vite, Node.js).
+                    Ported the Android state machine <strong>1:1</strong> into a
+                    fully unit-tested <strong>TypeScript engine</strong>
+                    driving video playback, button overlays, EMR routing, and
+                    PDF population, backed by an API with SQLite persistence,
+                    <strong>AWS Cognito</strong> auth and video content served
+                    from <strong>AWS S3</strong>.
                   </li>
                   <li>
-                    Designed and added features to existing
-                    <strong>Android (Kotlin, MVVM)</strong> apps for real-time
-                    patient monitoring across the device fleet.
+                    Operate deployment infrastructure on AWS with
+                    <strong
+                      >Docker, Kubernetes (k3s), and GitHub Actions
+                      CI/CD</strong
+                    >. Cut <strong>AWS spend 10–15%</strong>
+                    through cost optimization and instance right-sizing.
                   </li>
                   <li>
-                    Translated the CEO's product vision into shipped features,
-                    and mentored engineers while leading design and code reviews
-                    as Lead.
+                    Partner directly with the
+                    <strong>CEO, product management, and design</strong> to
+                    translate product vision into shipped features.
                   </li>
                 </ul>
               </div>
@@ -386,7 +418,7 @@
                     Developed full-stack features in
                     <strong>React.js + Node.js</strong> for an IoT SaaS platform
                     that lets businesses visualize and analyze sensor data from
-                    physical devices — modernizing Material-UI components and
+                    physical devices, modernizing Material-UI components and
                     resolving functional defects.
                   </li>
                   <li>
@@ -403,7 +435,7 @@
               <div class="timeline-content">
                 <div class="timeline-top">
                   <h3>
-                    Software Engineer, Research Platforms
+                    Software Engineer Intern, Research Platforms
                     <span class="badge badge-soft">Part-time</span>
                   </h3>
                   <span class="timeline-date">Jun 2021 – May 2022</span>
@@ -414,10 +446,11 @@
                 </p>
                 <ul>
                   <li>
-                    Enabled faster, more reliable
-                    <strong>clinical-research data collection</strong> by
-                    building data-processing algorithms and tooling that
-                    supported study analysis and reporting.
+                    Supported senior engineers building
+                    <strong>data-processing algorithms</strong> and internal
+                    tooling for
+                    <strong>clinical-research data collection</strong> and
+                    reporting.
                   </li>
                 </ul>
               </div>
@@ -453,9 +486,9 @@
                 </li>
                 <li>
                   Built an internal admin dashboard in
-                  <strong>Next.js (App Router)</strong> for platform operations —
+                  <strong>Next.js (App Router)</strong> for platform operations
                   admin authentication, moderation workflows, and operational
-                  reporting — deployed on <strong>Vercel</strong>.
+                  reporting deployed on <strong>Vercel</strong>.
                 </li>
                 <li>
                   Integrated <strong>Stripe</strong> for secure in-app payment

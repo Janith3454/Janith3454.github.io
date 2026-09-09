@@ -10,6 +10,42 @@
       : document.addEventListener("DOMContentLoaded", fn);
 
   onReady(() => {
+    /* ---- Theme toggle ---- */
+    const rootEl = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    const applyTheme = (theme) => {
+      rootEl.setAttribute("data-theme", theme);
+      if (themeMeta) {
+        themeMeta.setAttribute(
+          "content",
+          theme === "light" ? "#f3f5fc" : "#070a14"
+        );
+      }
+      if (themeToggle) {
+        const icon = themeToggle.querySelector("i");
+        if (icon) {
+          icon.className =
+            theme === "light" ? "fa-solid fa-moon" : "fa-solid fa-sun";
+        }
+        themeToggle.setAttribute(
+          "aria-label",
+          theme === "light" ? "Switch to dark theme" : "Switch to light theme"
+        );
+      }
+    };
+    applyTheme(rootEl.getAttribute("data-theme") || "dark");
+    if (themeToggle) {
+      themeToggle.addEventListener("click", () => {
+        const next =
+          rootEl.getAttribute("data-theme") === "light" ? "dark" : "light";
+        applyTheme(next);
+        try {
+          localStorage.setItem("theme", next);
+        } catch (e) {}
+      });
+    }
+
     /* ---- Current year ---- */
     const yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -140,7 +176,7 @@
     ).matches;
     if (typedEl) {
       const phrases = [
-        "Senior Full-Stack Engineer",
+        "Full-Stack Engineer",
         "React + TypeScript",
         "GraphQL / Apollo APIs",
         "AWS / Kubernetes",
